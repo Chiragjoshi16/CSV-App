@@ -1,0 +1,124 @@
+
+.csv-upload {
+  background-color: #1F1F1F;
+  color: #E0E0E0;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.5s ease-in-out;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.csv-upload h2 {
+  color: #BB86FC;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.csv-upload form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.csv-upload input[type="file"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #BB86FC;
+  border-radius: 5px;
+  background-color: #333333;
+  color: #E0E0E0;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.csv-upload button[type="submit"],
+.csv-upload .logout-button,
+.csv-upload button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background-color: #BB86FC;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+.csv-upload button:hover,
+.csv-upload .logout-button:hover {
+  background-color: #9C5DFF;
+}
+
+.csv-upload .logout-button {
+  align-self: flex-end;
+  background-color: #CF6679;
+}
+
+.csv-upload .logout-button:hover {
+  background-color: #B94D5E;
+}
+
+.csv-upload table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background-color: #333333;
+  color: #E0E0E0;
+}
+
+.csv-upload table th,
+.csv-upload table td {
+  border: 1px solid #444444;
+  padding: 10px;
+  text-align: left;
+}
+
+.csv-upload table th {
+  background-color: #2C2C2C;
+}
+
+.csv-upload input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #555555;
+  border-radius: 4px;
+  background-color: #222222;
+  color: #E0E0E0;
+  font-size: 0.9rem;
+}
+
+.csv-upload .button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.csv-upload .button-container button {
+  flex: 1;
+  margin: 0 5px;
+}
+
+.csv-upload .error-message {
+  color: #CF6679;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
